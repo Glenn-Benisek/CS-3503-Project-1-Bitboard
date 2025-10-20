@@ -31,25 +31,3 @@ Type 'quit' to exit.
 Note: There exists two uint64_t types (pieces and kings), organized into bits (0-31, 32-63). 
 Checkers never plays on white squares, compresseing black and red bit data into a single 64 bit int.
 This enables only two 64 bits to be used, versus four when including white squares.
-
-    a   b   c   d   e   f   g   h
-  ┏━━━┳━━━┳━━━┳━━━┳━━━┳━━━┳━━━┳━━━┓
-8 ┃▓▓▓┃ b ┃▓▓▓┃ b ┃▓▓▓┃ b ┃▓▓▓┃ b ┃ 8
-  ┣━━━╋━━━╋━━━╋━━━╋━━━╋━━━╋━━━╋━━━┫
-7 ┃ b ┃▓▓▓┃ b ┃▓▓▓┃ b ┃▓▓▓┃ b ┃▓▓▓┃ 7
-  ┣━━━╋━━━╋━━━╋━━━╋━━━╋━━━╋━━━╋━━━┫
-6 ┃▓▓▓┃ b ┃▓▓▓┃ b ┃▓▓▓┃ b ┃▓▓▓┃ b ┃ 6
-  ┣━━━╋━━━╋━━━╋━━━╋━━━╋━━━╋━━━╋━━━┫
-5 ┃   ┃▓▓▓┃   ┃▓▓▓┃   ┃▓▓▓┃   ┃▓▓▓┃ 5
-  ┣━━━╋━━━╋━━━╋━━━╋━━━╋━━━╋━━━╋━━━┫
-4 ┃▓▓▓┃   ┃▓▓▓┃   ┃▓▓▓┃   ┃▓▓▓┃   ┃ 4
-  ┣━━━╋━━━╋━━━╋━━━╋━━━╋━━━╋━━━╋━━━┫
-3 ┃ r ┃▓▓▓┃ r ┃▓▓▓┃ r ┃▓▓▓┃ r ┃▓▓▓┃ 3
-  ┣━━━╋━━━╋━━━╋━━━╋━━━╋━━━╋━━━╋━━━┫
-2 ┃▓▓▓┃ r ┃▓▓▓┃ r ┃▓▓▓┃ r ┃▓▓▓┃ r ┃ 2
-  ┣━━━╋━━━╋━━━╋━━━╋━━━╋━━━╋━━━╋━━━┫
-1 ┃ r ┃▓▓▓┃ r ┃▓▓▓┃ r ┃▓▓▓┃ r ┃▓▓▓┃ 1
-  ┗━━━┻━━━┻━━━┻━━━┻━━━┻━━━┻━━━┻━━━┛
-    a   b   c   d   e   f   g   h
-
-player (r) (R)    bot (b) (B)    ▓▓▓ white square
